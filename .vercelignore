@@ -1,0 +1,12 @@
+node_modules
+.next
+.env*.local
+dist
+src/pages
+src/main.tsx
+src/App.tsx
+src/App.css
+index.html
+vite.config.ts
+tsconfig.app.json
+tsconfig.node.json
