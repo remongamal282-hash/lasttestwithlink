@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://ascww.org'), // Replace with actual domain
     title: 'شركة مياه الشرب والصرف الصحى بأسيوط',
     description: 'تابع آخر أخبار وفعاليات شركة مياه الشرب والصرف الصحى بأسيوط والوادى الجديد',
     openGraph: {
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
         description: 'تابع آخر أخبار وفعاليات شركة مياه الشرب والصرف الصحى بأسيوط والوادى الجديد',
         locale: 'ar_EG',
         type: 'website',
-        siteName: 'شركة مياه الشرب والصرف الصحى بأسيوط'
+        siteName: 'شركة مياه الشرب والصرف الصحى بأسيوط',
+        images: ['/logo.png'],
     },
 };
 
