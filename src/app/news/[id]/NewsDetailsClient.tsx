@@ -63,7 +63,7 @@ export default function NewsDetailsClient({ id, initialData }: NewsDetailsClient
         : logo.src;
 
     const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
-    const shareText = encodeURIComponent(news.title);
+    const shareText = encodeURIComponent(`${news.title}\n\n${(news.description || '').replace(/<[^>]+>/g, '').substring(0, 160)}`);
 
     return (
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
